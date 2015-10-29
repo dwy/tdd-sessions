@@ -3,12 +3,12 @@
 namespace RationalNumbers
 {
     [TestFixture]
-    public class ClassTest1
+    public class SmokeTest
     {
         [Test]
-        public void SmokeTest()
+        public void Smoke()
         {
-            Assert.Fail();
+            Assert.Pass();
         }
     }
 }
