@@ -7,7 +7,7 @@ namespace RationalNumbers
 
         public Fraction(int numerator, int denominator)
         {
-            int gcd = GreatestCommonDivisor(numerator, denominator);
+            int gcd = MathUtil.GreatestCommonDivisor(numerator, denominator);
             this.numerator = numerator / gcd;
             this.denominator = denominator / gcd;
         }
@@ -21,11 +21,6 @@ namespace RationalNumbers
         public override string ToString()
         {
             return string.Format("{0}/{1}", numerator, denominator);
-        }
-
-        static int GreatestCommonDivisor(int a, int b)
-        {
-            return b == 0 ? a : GreatestCommonDivisor(b, a % b);
         }
     }
 }
