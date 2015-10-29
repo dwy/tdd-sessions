@@ -1,6 +1,6 @@
 namespace RationalNumbers
 {
-    public class MathUtil
+    public static class MathUtil
     {
         public static int GreatestCommonDivisor(int a, int b)
         {

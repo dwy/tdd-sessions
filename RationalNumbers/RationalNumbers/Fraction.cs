@@ -14,8 +14,8 @@ namespace RationalNumbers
 
         public Fraction Add(Fraction other)
         {
-            int newDenominator = numerator + other.numerator;
-            return new Fraction(newDenominator, denominator);
+            int newNumerator = numerator + other.numerator;
+            return new Fraction(newNumerator, denominator);
         }
 
         public override string ToString()
